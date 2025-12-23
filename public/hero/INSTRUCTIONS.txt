@@ -1,0 +1,32 @@
+# Quick Guide: Hero Background Image
+
+## 📁 Where to Put Image
+
+Place your image in: `public/hero/`
+
+## 📝 Required Filename
+
+Save your image as: **background.jpg**
+
+## ✅ Best Specifications
+
+- **Format:** JPG
+- **Size:** 1920 × 1080px minimum
+- **File Size:** 200-500KB (optimized)
+- **Orientation:** Landscape (horizontal)
+- **Subject:** Professional/legal theme
+
+## 💡 Image Tips
+
+- Professional office or legal imagery
+- Leave space on LEFT side for text
+- Not too busy or distracting
+- Good lighting and quality
+
+## 🚀 That's It!
+
+Drop the file in the folder as `background.jpg` and refresh your website!
+
+---
+
+**Note:** A dark gradient overlay is applied automatically to ensure text readability.

@@ -1,0 +1,30 @@
+# Quick Guide: Adding Association Logos
+
+## 📁 Where to Put Logos
+
+Place logo files in: `public/associations/`
+
+## 📝 Required Filenames
+
+Save your logos with these EXACT names:
+
+- `gba.png` → Ghana Bar Association
+- `ciarb.png` → Chartered Institute of Arbitrators  
+- `law-society.png` → Law Society (UK)
+- `eals.png` → East African Law Society
+- `uls.png` → Uganda Law Society
+- `ica.png` → International Compliance Association
+
+## ✅ Best Format
+
+- **PNG** with transparent background
+- **200 × 200px** minimum
+- **Under 100KB** file size
+
+## 🚀 That's It!
+
+Drop the files in the folder and refresh your website. Logos will appear automatically!
+
+---
+
+**Can't find a logo?** No problem - the association name will display as text instead.
