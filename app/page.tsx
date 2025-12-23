@@ -204,7 +204,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - Background Image with Overlay */}
-      <section id="home" className="relative pt-32 pb-24 px-6 min-h-[600px] flex items-center overflow-hidden">
+      <section id="home" className="relative pt-32 pb-32 px-6 min-h-[780px] flex items-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -221,10 +221,10 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto relative z-10 w-full">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               FULL SERVICE<br />LAW FIRM
             </h1>
-            <p className="text-xl md:text-2xl text-slate-200 mb-10 leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed">
               Offering services in Private Equity, Corporate & Commercial Law, Immigration Advisory, Family Law, Criminal & Civil Litigation
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
