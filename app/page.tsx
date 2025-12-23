@@ -390,13 +390,14 @@ export default function Home() {
                 className="card-modern overflow-hidden hover-lift group cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="relative h-80 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+                <div className="relative h-64 sm:h-72 md:h-80 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover object-center group-hover:scale-110 transition-smooth"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    quality={95}
+                    className="object-contain sm:object-cover sm:object-center object-center group-hover:scale-110 transition-smooth"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     priority={index < 4}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
@@ -553,13 +554,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-3">
-              <div className="relative h-10 w-auto">
+              <div className="relative h-full max-h-17 w-auto">
                 <Image
                   src="/logo.png"
                   alt="Dotse@Law"
-                  width={120}
-                  height={40}
-                  className="object-contain brightness-0 invert"
+                  width={200}
+                  height={56}
+                  className="h-full w-auto object-contain max-w-[200px]"
+                  priority
                 />
               </div>
             </div>
