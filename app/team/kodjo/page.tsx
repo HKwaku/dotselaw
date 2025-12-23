@@ -21,7 +21,7 @@ export default function KodjoPage() {
           <div className="grid md:grid-cols-3 gap-12 mb-16">
             <div className="md:col-span-1">
               <div className="card-modern overflow-hidden sticky top-28">
-                <div className="relative h-96 bg-gradient-to-br from-gray-100 to-gray-200">
+                <div className="relative w-full aspect-[3/4] sm:aspect-auto sm:h-72 md:h-80 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
                   <Image src="/team/kodjo.jpg" alt="Kodjo Baidoo" fill className="object-cover object-center" priority />
                 </div>
                 <div className="p-6">

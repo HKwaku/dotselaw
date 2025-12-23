@@ -92,14 +92,7 @@ export default function Home() {
       image: '/team/patricia.jpg',
       profileUrl: '/team/patricia'
     },
-    {
-      name: 'Nicholas Normeshie',
-      role: 'Associate',
-      phone: '',
-      email: '',
-      image: '/team/nicholas.jpg',
-      profileUrl: '/team/nicholas'
-    },
+
     {
       name: 'Portia Bosompem',
       role: 'Associate',
@@ -109,14 +102,6 @@ export default function Home() {
       profileUrl: '/team/portia'
     },
     {
-      name: 'Martin Kpebu',
-      role: 'Consulting Attorney',
-      phone: '',
-      email: '',
-      image: '/team/martin.jpg',
-      profileUrl: '/team/martin'
-    },
-    {
       name: 'Governor Ahene-Amanquanor',
       role: 'Associate',
       phone: '+233 209622558',
@@ -124,6 +109,24 @@ export default function Home() {
       image: '/team/governor.jpg',
       profileUrl: '/team/governor'
     },
+    {
+      name: 'Nicholas Normeshie',
+      role: 'Associate',
+      phone: '',
+      email: '',
+      image: '/team/nicholas.jpg',
+      profileUrl: '/team/nicholas'
+    },
+
+    {
+      name: 'Martin Kpebu',
+      role: 'Consulting Attorney',
+      phone: '',
+      email: '',
+      image: '/team/martin.jpg',
+      profileUrl: '/team/martin'
+    },
+
     {
       name: 'Kodjo Baidoo',
       role: 'Consultant',
@@ -166,7 +169,7 @@ export default function Home() {
             <div className="hidden md:flex items-center space-x-10">
               <a href="#home" className="text-gray-800 hover:text-blue-600 font-medium transition-smooth">Home</a>
               <a href="#about" className="text-gray-800 hover:text-blue-600 font-medium transition-smooth">About</a>
-              <a href="#practice" className="text-gray-800 hover:text-blue-600 font-medium transition-smooth">Services</a>
+              <a href="#practice" className="text-gray-800 hover:text-blue-600 font-medium transition-smooth">Practice Areas</a>
               <a href="#team" className="text-gray-800 hover:text-blue-600 font-medium transition-smooth">Team</a>
               <a 
                 href="#contact" 
@@ -390,14 +393,13 @@ export default function Home() {
                 className="card-modern overflow-hidden hover-lift group cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="relative h-64 sm:h-72 md:h-80 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+                <div className="relative w-full aspect-[3/4] sm:aspect-auto sm:h-72 md:h-80 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    quality={95}
-                    className="object-contain sm:object-cover sm:object-center object-center group-hover:scale-110 transition-smooth"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-cover object-top sm:object-center group-hover:scale-110 transition-smooth"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                     priority={index < 4}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
