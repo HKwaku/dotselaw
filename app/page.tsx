@@ -153,7 +153,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-20">
             {/* Logo Only - Scalable and fits navbar */}
             <a href="#home" className="flex items-center h-full py-3">
-              <div className="relative h-full max-h-14 w-auto">
+              <div className="relative h-full max-h-10 w-auto">
                 <Image
                   src="/logo.png"
                   alt="Dotse@Law"
