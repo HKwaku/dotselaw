@@ -157,8 +157,8 @@ export default function Home() {
                 <Image
                   src="/logo.png"
                   alt="Dotse@Law"
-                  width={200}
-                  height={56}
+                  width={300}
+                  height={70}
                   className="h-full w-auto object-contain max-w-[200px]"
                   priority
                 />
@@ -555,20 +555,8 @@ export default function Home() {
       <footer className="bg-slate-900 text-white py-12 px-6 border-t border-slate-800">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-3">
-              <div className="relative h-full max-h-17 w-auto">
-                <Image
-                  src="/logo.png"
-                  alt="Dotse@Law"
-                  width={200}
-                  height={56}
-                  className="h-full w-auto object-contain max-w-[200px]"
-                  priority
-                />
-              </div>
-            </div>
             
-            <div className="text-center md:text-left">
+            <div className="text-left md:text-left">
               <p className="text-slate-400 mb-1">Barristers, Solicitors and Consultants</p>
               <p className="text-slate-500 text-sm">© 2024 Dotse@Law. All rights reserved.</p>
             </div>
