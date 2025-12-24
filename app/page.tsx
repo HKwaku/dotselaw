@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { Menu, X, Mail, Phone, MapPin, Users, Briefcase, Globe, Award, Building2, Landmark, Factory, Ship, Heart, Smartphone, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { Menu, X, Mail, Phone, MapPin, Users, Briefcase, Globe, Award, Building2, Landmark, Factory, Ship, Heart, Smartphone, ArrowRight, CheckCircle2, Zap, Hotel, Building, TrendingUp, Scale, Shuffle } from 'lucide-react'
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -28,7 +28,7 @@ export default function Home() {
     },
     {
       title: 'Insolvency & Restructuring',
-      icon: Landmark,
+      icon: TrendingUp,
       description: 'Strategic counsel on insolvency proceedings and corporate restructuring matters.',
       url: '/practice/insolvency'
     },
@@ -46,13 +46,13 @@ export default function Home() {
     },
     {
       title: 'Mergers & Acquisitions',
-      icon: Globe,
+      icon: Shuffle,
       description: 'Full-service M&A advisory from due diligence to transaction completion.',
       url: '/practice/mergers'
     },
     {
       title: 'Litigation (Civil/Criminal/ADR)',
-      icon: Briefcase,
+      icon: Scale,
       description: 'Skilled representation in civil, criminal litigation, and alternative dispute resolution.',
       url: '/practice/litigation'
     },
@@ -65,13 +65,13 @@ export default function Home() {
   ]
 
   const sectors = [
-    { name: 'Energy & Infrastructure', icon: Building2 },
+    { name: 'Energy & Infrastructure', icon: Zap },
     { name: 'Maritime', icon: Ship },
     { name: 'Life Sciences', icon: Heart },
     { name: 'Mining and Metals', icon: Factory },
-    { name: 'Hotels and Leisure', icon: Building2 },
+    { name: 'Hotels and Leisure', icon: Hotel },
     { name: 'Financial Institutions', icon: Landmark },
-    { name: 'Industrials and Manufacturing', icon: Factory },
+    { name: 'Industrials and Manufacturing', icon: Building },
     { name: 'Telecommunications, Media & Technology', icon: Smartphone }
   ]
 
@@ -181,9 +181,11 @@ export default function Home() {
 
             {/* Mobile menu button */}
             <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              type="button"
+              onClick={() => setMobileMenuOpen((prev) => !prev)}
               className="md:hidden p-2 rounded-lg text-gray-800 hover:bg-gray-100 transition-smooth"
             >
+
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -193,11 +195,12 @@ export default function Home() {
         {mobileMenuOpen && (
           <div className="md:hidden glass-dark border-t animate-fade-in">
             <div className="px-4 py-6 space-y-3">
-              <a href="#home" className="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-smooth">Home</a>
-              <a href="#about" className="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-smooth">About</a>
-              <a href="#practice" className="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-smooth">Services</a>
-              <a href="#team" className="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-smooth">Team</a>
-              <a href="#contact" className="block px-4 py-3 bg-blue-600 text-white rounded-lg text-center font-medium hover:bg-blue-700 transition-smooth">Contact Us</a>
+              <a href="#home" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-smooth">Home</a>
+              <a href="#about" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-smooth">About</a>
+              <a href="#practice" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-smooth">Practice Areas</a>
+              <a href="#team" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-smooth">Team</a>
+              <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 bg-blue-600 text-white rounded-lg text-center font-medium hover:bg-blue-700 transition-smooth">Contact Us</a>
+
             </div>
           </div>
         )}
