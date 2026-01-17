@@ -26,7 +26,7 @@ export default function PatriciaPage() {
                 </div>
                 <div className="p-6">
                   <h1 className="text-2xl font-bold text-gray-900 mb-2">Patricia Mensah</h1>
-                  <p className="text-blue-600 font-semibold mb-6">Associate</p>
+                  <p className="text-blue-600 font-semibold mb-6">Senior Associate</p>
                   <div className="space-y-3">
                     <a href="tel:+233242882523" className="flex items-center text-gray-600 hover:text-blue-600 transition-smooth group">
                       <Phone className="h-5 w-5 mr-3 flex-shrink-0" />
