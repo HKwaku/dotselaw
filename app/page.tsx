@@ -86,7 +86,7 @@ export default function Home() {
     },
     {
       name: 'Patricia Mensah',
-      role: 'Associate',
+      role: 'Senior Associate',
       phone: '+233 242 882 523',
       email: 'patricia@dotselaw.com',
       image: '/team/patricia.jpg',
